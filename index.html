@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CADraft - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>CADraft</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="welcome">
+      <h2>Welcome to CADraft</h2>
+      <p>Showcasing creative CAD designs and projects.</p>
+    </div>
+  
+    <div class="about">
+      <h3>About Me</h3>
+      <p> I’m Sriharish, a passionate and experienced Mechanical Designer specializing in CAD (Computer-Aided Design). With a strong background in mechanical engineering, I have honed my skills in designing innovative and precise mechanical systems using advanced CAD software.  I use state-of-the-art tools like SolidWorks, NX-12, and Fusion 360 to create high-quality, precise designs that meet client specifications and industry standards. Whether it's a simple component or a complex assembly, my attention to detail ensures that every project is completed with the highest level of precision.</p>
+    </div>
+  </section>
+
+  <section id="projects" class="portfolio">
+    <h2>My Projects</h2>
+    <div class="gallery">
+      <div class="project" onclick="openCarousel(1)">
+        <img src="v6 engine/Screenshot 2024-11-25 183452.png" alt="Project 1">
+        <p>V6 Engine</p>
+      </div>
+      <div class="project" onclick="openCarousel(2)">
+        <img src="slding mesh gearbox/Screenshot 2024-11-24 123223.png" alt="Project 2">
+        <p>Sliding Mesh Gearbox</p>
+      </div>
+      <div class="project" onclick="openCarousel(3)">
+        <img src="ocean cleanup bot/Screenshot 2024-11-24 122719.png" alt="Project 3">
+        <p>Ocean Cleanup Bot</p>
+      </div>
+      <div class="project" onclick="openCarousel(4)">
+        <img src="train coach/Screenshot 2024-11-24 130525.png" alt="Project 4">
+        <p>Train Coach</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: sriharishgopi2003@gmail.com</p>
+    <p>Phone: 7667779719</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 CADraft. All Rights Reserved.</p>
+  </footer>
+
+  <div id="carousel" class="carousel">
+    <div class="carousel-content">
+      <button id="closeCarousel" class="close">X</button>
+      <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+      <img id="carousel-image" src="">
+      <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+    <div id="carousel-caption"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
